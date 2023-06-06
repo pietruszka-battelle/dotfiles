@@ -1,0 +1,15 @@
+#!/bin/bash
+
+WL=$1
+cd ~/src
+gh repo clone battellecube/$WL
+cd $WL
+git submodule update --init --recursive
+cube_ env set -w $WL -n main
+cube_ env init
+cube_ env destroy
+cube_ env delete -w $WL -n main
+cube_ workload rbac delete -n $WL
+cube_ workload delete -n $WL
+cd ~/src
+rm -rf $WL
