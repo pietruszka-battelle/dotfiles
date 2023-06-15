@@ -1,7 +1,7 @@
 [gpg]
 	program = gpg
 [user]
-	email = pietruszka@battelle.us
+	email = pietruszka@battelle.org
 	name = Kevin Pietruszka
 	signingkey = 957C1B84178EF3E3
 [commit]
