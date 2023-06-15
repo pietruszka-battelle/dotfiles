@@ -3,6 +3,7 @@
 [user]
 	email = pietruszka@battelle.us
 	name = Kevin Pietruszka
+	signingkey = 957C1B84178EF3E3
 [commit]
 	gpgsign = true
 [core]
