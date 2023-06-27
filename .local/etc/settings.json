@@ -17,6 +17,7 @@
     "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
     "initialCols": 240,
     "initialRows": 90,
+    "launchMode": "maximized",
     "profiles": 
     {
         "defaults": 
