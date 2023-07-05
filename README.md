@@ -29,8 +29,8 @@ _NOTE: The `-f` will smash local files that exist in you dotfiles repo_
 
 ```
 cd ~
-git clone --bare git@github.com:pietruszka-battelle/dotfiles ~/.dotfiles
+git clone --single-branch --branch template --bare git@github.com:pietruszka-battelle/dotfiles ~/.dotfiles
 alias dotgit='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotgit checkout -f
-.local/bin/install-tools.sh
+.local/bin/bootstrap.sh
 ```
