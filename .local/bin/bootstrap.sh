@@ -77,6 +77,12 @@ setup-windows-terminal()
 	cp ~/.local/etc/settings.json '/mnt/c/Users/PietruszkaKevin(US)/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState'
 }
 
+install-vim-stuff()
+{
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+}
+
 check-gh
 install-common-packages
 install-yq

@@ -168,3 +168,4 @@ __git_complete dotgit __git_main
 DEBEMAIL="cube-maintainers@battelle.us"
 DEBFULLNAME="CUBE Maintainers"
 export DEBEMAIL DEBFULLNAME
+export ARM_SKIP_PROVIDER_REGISTRATION=true
