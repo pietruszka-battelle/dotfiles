@@ -8,9 +8,6 @@ case $- in
       *) return;;
 esac
 
-if [ -f ~/.bash_functions ]; then
-    . ~/.bash_functions
-fi
 
 if [ ${TMUX+IS_SET} ]; then
     HISTFILE=~/.bash_history_$(tmux-pane)
