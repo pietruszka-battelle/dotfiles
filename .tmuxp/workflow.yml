@@ -1,0 +1,10 @@
+session_name: workflow
+start_directory: .
+windows:
+  - window_name: main
+    layout: main-vertical
+    panes:
+      - shell_command:
+          - vim
+      - echo hello
+      - echo hello

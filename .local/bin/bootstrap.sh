@@ -2,11 +2,6 @@
 
 set -e
 
-check-gh()
-{
-	gh auth token || gh auth login
-}
-
 install-common-packages()
 {
 	sudo apt update
@@ -72,18 +67,7 @@ install-nvm()
 	nvm install-latest-npm
 }
 
-setup-windows-terminal()
-{
-	cp ~/.local/etc/settings.json '/mnt/c/Users/PietruszkaKevin(US)/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState'
-}
 
-install-vim-stuff()
-{
-    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-}
-
-check-gh
 install-common-packages
 install-yq
 install-github-cli
@@ -91,6 +75,6 @@ install-terraform-cli
 install-azure-cli
 install-nvm
 install-cube-cli
-setup-windows-terminal
 
-echo -e "\n\nYou'll wants these fonts\n\thttps://github.com/powerline/fonts"
+# setup-windows-terminal
+# echo -e "\n\nYou'll wants these fonts\n\thttps://github.com/powerline/fonts"
