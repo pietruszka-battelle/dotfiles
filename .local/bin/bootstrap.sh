@@ -7,17 +7,18 @@ install-common-packages()
 	sudo apt update
 	sudo apt dist-upgrade -y
 	sudo apt install -y powerline vim-nox build-essential gnupg curl tmux git{,-lfs} silversearcher-ag etckeeper xdg-utils wslu software-properties-common python3-pip cmake ripgrep
+	sudo apt install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen
 	git lfs install
 }
 
 install-nvim() {
 	cd ~
 	git clone https://github.com/neovim/neovim.git
+	git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 	cd ~/neovim
 	make CMAKE_BUILD_TYPE=RelWithDebInfo
 	sudo make install
 	cd ~
-	git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 }
 
 install-azure-cli() 
@@ -82,7 +83,6 @@ install-common-packages
 install-yq
 install-nvim
 install-github-cli
-gh auth login
 install-terraform-cli
 install-azure-cli
 install-nvm
