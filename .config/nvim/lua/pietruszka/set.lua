@@ -1,4 +1,4 @@
-vim.opt.guicursor = "a:ver40-iCursor-blinkwait300-blinkon200-blinkoff150"
+vim.opt.guicursor = ""
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -8,7 +8,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = false
 
-vim.opt.smartindent = true
+vim.opt.smartindent = false
 
 vim.opt.wrap = false
 

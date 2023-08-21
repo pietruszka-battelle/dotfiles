@@ -35,5 +35,5 @@ return require('packer').startup(function(use)
 			require('Comment').setup()
 		end
 	})
-    use('xiyaowong/transparent.nvim')
+	use('xiyaowong/transparent.nvim')
 end)
