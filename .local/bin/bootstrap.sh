@@ -80,7 +80,9 @@ install-nvm()
 
 install-common-packages
 install-yq
+install-nvim
 install-github-cli
+gh auth login
 install-terraform-cli
 install-azure-cli
 install-nvm
